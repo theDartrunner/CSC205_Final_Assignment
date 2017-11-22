@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class scChanger : MonoBehaviour {
     /* 
      * loads correct scene on button click 
-     * to add a new scene make new method with scene name in ""
+     * to add a new scene make new method with scene name in " "
     */
 	
 	public void maninMenu ()
