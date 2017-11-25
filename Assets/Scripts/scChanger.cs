@@ -30,4 +30,9 @@ public class scChanger : MonoBehaviour {
     {
         SceneManager.LoadScene("howToPlay");
     }
+
+    public void reloadLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
 }
