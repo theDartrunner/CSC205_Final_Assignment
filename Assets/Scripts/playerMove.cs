@@ -76,7 +76,7 @@ public class playerMove : MonoBehaviour {
 		}
     }
 
-	void Jump () {
+	public void Jump () {
 		rb.AddForce (Vector2.up * jumpForce);
 		anim.SetBool("jump", true); // start jump animation
 		isGrounded = false;
@@ -92,12 +92,16 @@ public class playerMove : MonoBehaviour {
 		} 
     }
 
-	void PlayerRaycast(){
+	//Mario jumps ontop of turtle Ai
+	void PlayerRaycast(){ 
 		RaycastHit2D hit = Physics2D.Raycast (transform.position, Vector2.down);
 		if(hit.distance < 2.0f && hit.collider.tag == "Enemy"){
+			
+			//Only jumps if perfect jump centered over Ai
 			Jump ();
+
 			Destroy (hit.collider.gameObject);
-			Instantiate (turtleShell);
+			Instantiate (turtleShell, new Vector2 (transform.position.x, 0), transform.rotation);
 		}
 	}
 }
