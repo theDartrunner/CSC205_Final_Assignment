@@ -8,12 +8,12 @@ public class playerMove : MonoBehaviour {
     public int jumpForce;
     public Rigidbody2D rb;
     public Animator anim;
-    private bool jumping;
     private SpriteRenderer mySpriteRenderer;
+	public bool isGrounded = true;
+	public GameObject turtleShell;
 
     void Start () {
 
-        jumping = false;
         mySpriteRenderer = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
@@ -23,10 +23,12 @@ public class playerMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		PlayerRaycast ();
+
         //stop walk animation
 		if (Input.GetKeyUp(KeyCode.D))
         {
-            anim.SetTime(0);
+            
             anim.SetBool("walk", false);
         }
 
@@ -36,7 +38,7 @@ public class playerMove : MonoBehaviour {
             if (mySpriteRenderer.flipX == false)
             {
                 gameObject.transform.position += gameObject.transform.right * moveSpeed * Time.deltaTime;
-                anim.SetTime(1);
+                
                 anim.SetBool("walk", true); // start walk animation
                 
             }
@@ -49,7 +51,7 @@ public class playerMove : MonoBehaviour {
         // stop walk animation
         if (Input.GetKeyUp(KeyCode.A))
         {
-            anim.SetTime(0);    
+              
             anim.SetBool("walk", false);
         }
 
@@ -59,7 +61,7 @@ public class playerMove : MonoBehaviour {
             if (mySpriteRenderer.flipX == true)
             {
                 gameObject.transform.position += gameObject.transform.right * -1 * moveSpeed * Time.deltaTime;
-                anim.SetTime(1);
+                
                 anim.SetBool("walk", true); // start walk animation
             }
 
@@ -69,23 +71,41 @@ public class playerMove : MonoBehaviour {
             }
         }
 
-       
-        if (Input.GetKeyDown(KeyCode.Space) && jumping == false)
-        {
- 
-            jumping = true;
-            rb.AddForce(Vector2.up * jumpForce);
-            anim.SetBool("jump", true); // start jump animation
-        }
+		if (Input.GetKeyDown (KeyCode.Space) && isGrounded == true) {
+			Jump ();
+		}
     }
+
+	public void Jump () {
+		rb.AddForce (Vector2.up * jumpForce);
+		anim.SetBool("jump", true); // start jump animation
+		isGrounded = false;
+	}
 
     // see if player is touching the floor and stop jump animation
     void OnCollisionEnter2D(Collision2D hit)
     {
         if (hit.gameObject.tag == "Floor")
         {
-            jumping = false;
+			isGrounded = true;
             anim.SetBool("jump", false);
-        }
+		} 
     }
+
+	//Mario jumps ontop of turtle Ai
+	void PlayerRaycast(){ 
+		RaycastHit2D hit = Physics2D.Raycast (transform.position, Vector2.down);
+		if(hit.distance < 2.0f && hit.collider.tag == "Enemy"){
+			
+			//Only jumps if perfect jump centered over Ai
+			Jump ();
+
+			Destroy (hit.collider.gameObject);
+			Instantiate (turtleShell, new Vector2 (transform.position.x, 0), transform.rotation);
+		}
+	}
+
+	public void killPlayer(){
+		Destroy (gameObject);
+	}
 }

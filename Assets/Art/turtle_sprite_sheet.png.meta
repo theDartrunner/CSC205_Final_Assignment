@@ -1,0 +1,1432 @@
+fileFormatVersion: 2
+guid: 1a4d3b3127d674c6c85a0f003df0a45d
+timeCreated: 1511994492
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: turtle_sprite_sheet_0
+    21300002: turtle_sprite_sheet_1
+    21300004: turtle_sprite_sheet_2
+    21300006: turtle_sprite_sheet_3
+    21300008: turtle_sprite_sheet_4
+    21300010: turtle_sprite_sheet_5
+    21300012: turtle_sprite_sheet_6
+    21300014: turtle_sprite_sheet_7
+    21300016: turtle_sprite_sheet_8
+    21300018: turtle_sprite_sheet_9
+    21300020: turtle_sprite_sheet_10
+    21300022: turtle_sprite_sheet_11
+    21300024: turtle_sprite_sheet_12
+    21300026: turtle_sprite_sheet_13
+    21300028: turtle_sprite_sheet_14
+    21300030: turtle_sprite_sheet_15
+    21300032: turtle_sprite_sheet_16
+    21300034: turtle_sprite_sheet_17
+    21300036: turtle_sprite_sheet_18
+    21300038: turtle_sprite_sheet_19
+    21300040: turtle_sprite_sheet_20
+    21300042: turtle_sprite_sheet_21
+    21300044: turtle_sprite_sheet_22
+    21300046: turtle_sprite_sheet_23
+    21300048: turtle_sprite_sheet_24
+    21300050: turtle_sprite_sheet_25
+    21300052: turtle_sprite_sheet_26
+    21300054: turtle_sprite_sheet_27
+    21300056: turtle_sprite_sheet_28
+    21300058: turtle_sprite_sheet_29
+    21300060: turtle_sprite_sheet_30
+    21300062: turtle_sprite_sheet_31
+    21300064: turtle_sprite_sheet_32
+    21300066: turtle_sprite_sheet_33
+    21300068: turtle_sprite_sheet_34
+    21300070: turtle_sprite_sheet_35
+    21300072: turtle_sprite_sheet_36
+    21300074: turtle_sprite_sheet_37
+    21300076: turtle_sprite_sheet_38
+    21300078: turtle_sprite_sheet_39
+    21300080: turtle_sprite_sheet_40
+    21300082: turtle_sprite_sheet_41
+    21300084: turtle_sprite_sheet_42
+    21300086: turtle_sprite_sheet_43
+    21300088: turtle_sprite_sheet_44
+    21300090: turtle_sprite_sheet_45
+    21300092: turtle_sprite_sheet_46
+    21300094: turtle_sprite_sheet_47
+    21300096: turtle_sprite_sheet_48
+    21300098: turtle_sprite_sheet_49
+    21300100: turtle_sprite_sheet_50
+    21300102: turtle_sprite_sheet_51
+    21300104: turtle_sprite_sheet_52
+    21300106: turtle_sprite_sheet_53
+    21300108: turtle_sprite_sheet_54
+    21300110: turtle_sprite_sheet_55
+    21300112: turtle_sprite_sheet_56
+    21300114: turtle_sprite_sheet_57
+    21300116: turtle_sprite_sheet_58
+    21300118: turtle_sprite_sheet_59
+    21300120: turtle_sprite_sheet_60
+    21300122: turtle_sprite_sheet_61
+    21300124: turtle_sprite_sheet_62
+    21300126: turtle_sprite_sheet_63
+    21300128: turtle_sprite_sheet_64
+    21300130: turtle_sprite_sheet_65
+    21300132: turtle_sprite_sheet_66
+    21300134: turtle_sprite_sheet_67
+    21300136: turtle_sprite_sheet_68
+    21300138: turtle_sprite_sheet_69
+    21300140: turtle_sprite_sheet_70
+    21300142: turtle_sprite_sheet_71
+    21300144: turtle_sprite_sheet_72
+    21300146: turtle_sprite_sheet_73
+    21300148: turtle_sprite_sheet_74
+    21300150: turtle_sprite_sheet_75
+    21300152: turtle_sprite_sheet_76
+    21300154: turtle_sprite_sheet_77
+    21300156: turtle_sprite_sheet_78
+    21300158: turtle_sprite_sheet_79
+    21300160: turtle_sprite_sheet_80
+    21300162: turtle_sprite_sheet_81
+    21300164: turtle_sprite_sheet_82
+    21300166: turtle_sprite_sheet_83
+    21300168: turtle_sprite_sheet_84
+    21300170: turtle_sprite_sheet_85
+    21300172: turtle_sprite_sheet_86
+    21300174: turtle_sprite_sheet_87
+    21300176: turtle_sprite_sheet_88
+    21300178: turtle_sprite_sheet_89
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 389
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 388
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 383
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 382
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 381
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 381
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 382
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 383
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 388
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 389
+        width: 20
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 359
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 342
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 342
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 341
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 340
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 340
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 341
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 342
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 342
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 359
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 329
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 301
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 302
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 301
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 300
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 300
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 301
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 302
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 301
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 329
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 299
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 299
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 269
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 260
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 261
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 261
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 261
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 261
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 260
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 269
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 207
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 211
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 212
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 208
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 203
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 203
+        width: 30
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 208
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 212
+        width: 38
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 211
+        width: 38
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 207
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 156
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 161
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 158
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 158
+        width: 38
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 161
+        width: 40
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 160
+        width: 36
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 156
+        width: 33
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 160
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 126
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 123
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 122
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 121
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 121
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 122
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 123
+        width: 23
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 126
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 82
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 82
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 81
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 80
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 80
+        width: 22
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 81
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 82
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 82
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 41
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 42
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 41
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 40
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 40
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 41
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_82
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 42
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_83
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 41
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_84
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 0
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_85
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_86
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 1
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_87
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1
+        width: 22
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_88
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 1
+        width: 19
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: turtle_sprite_sheet_89
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 21
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
