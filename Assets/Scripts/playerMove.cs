@@ -104,4 +104,8 @@ public class playerMove : MonoBehaviour {
 			Instantiate (turtleShell, new Vector2 (transform.position.x, 0), transform.rotation);
 		}
 	}
+
+	public void killPlayer(){
+		Destroy (gameObject);
+	}
 }
