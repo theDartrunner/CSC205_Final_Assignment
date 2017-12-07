@@ -8,13 +8,11 @@ public class AiMovement : MonoBehaviour {
 	public int xpos;
 	public Rigidbody2D rb;
 	private SpriteRenderer mySpriteRenderer;
-	private playerMove player;
 
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
 		mySpriteRenderer = GetComponent<SpriteRenderer>();
-		player = GameObject.FindObjectOfType<playerMove> ();
 	}
 	
 	// Update is called once per frame
@@ -22,23 +20,21 @@ public class AiMovement : MonoBehaviour {
 		RaycastHit2D hit = Physics2D.Raycast (transform.position, new Vector2 (xpos, 0));
 		if (mySpriteRenderer.flipX == false) {
 			rb.AddForce (Vector2.right * speed * xpos);
-			if (hit.distance < 1.5f) {
+			if (hit.distance < 3.0f) {
 				flipAi ();
 				mySpriteRenderer.flipX = true;
 				if (hit.collider.tag == "Player") {
-					player.Jump ();
-					StartCoroutine (Wait ());
+					Destroy (hit.collider.gameObject);
 				}
 			}
 		} else
 		if (mySpriteRenderer.flipX == true) {
 			rb.AddForce (Vector2.right * speed * xpos);
-			if (hit.distance < 1.5f) {
+			if (hit.distance < 3.0f) {
 				flipAi ();
 				mySpriteRenderer.flipX = false;
 				if (hit.collider.tag == "Player") {
-					player.Jump ();
-					StartCoroutine (Wait ());
+					Destroy (hit.collider.gameObject);
 				}
 			}
 		}
@@ -46,11 +42,5 @@ public class AiMovement : MonoBehaviour {
 
 	void flipAi (){
 		xpos = xpos * -1;
-	}
-
-	IEnumerator Wait()
-	{
-		yield return new WaitForSeconds(0.80f);
-		player.killPlayer ();
 	}
 }
