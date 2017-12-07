@@ -11,6 +11,7 @@ public class playerMove : MonoBehaviour {
     private SpriteRenderer mySpriteRenderer;
 	public bool isGrounded = true;
 	public GameObject turtleShell;
+    public GameObject portalGun;
 
     void Start () {
 
@@ -25,8 +26,14 @@ public class playerMove : MonoBehaviour {
 
 		PlayerRaycast ();
 
+        var pos = Camera.main.WorldToScreenPoint(transform.position);
+        var dir = Input.mousePosition - pos;
+        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        portalGun.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+
+
         //stop walk animation
-		if (Input.GetKeyUp(KeyCode.D))
+        if (Input.GetKeyUp(KeyCode.D))
         {
             
             anim.SetBool("walk", false);
@@ -74,6 +81,7 @@ public class playerMove : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded == true) {
 			Jump ();
 		}
+
     }
 
 	public void Jump () {
