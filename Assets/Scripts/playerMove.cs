@@ -89,11 +89,12 @@ public class playerMove : MonoBehaviour {
         {
 			isGrounded = true;
             anim.SetBool("jump", false);
-		} 
+		}
+        
     }
 
-	//Mario jumps ontop of turtle Ai
-	void PlayerRaycast(){ 
+    //Mario jumps ontop of turtle Ai
+    void PlayerRaycast(){ 
 		RaycastHit2D hit = Physics2D.Raycast (transform.position, Vector2.down);
 		if(hit.distance < 2.0f && hit.collider.tag == "Enemy"){
 			
