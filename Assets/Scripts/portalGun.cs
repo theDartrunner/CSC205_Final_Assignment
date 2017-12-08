@@ -11,6 +11,7 @@ public class portalGun : MonoBehaviour {
     public Sprite gun;
     public Sprite gunO;
     public Sprite gunB;
+    public bool shot;
 
 	// Use this for initialization
 	void Start () {
@@ -34,27 +35,38 @@ public class portalGun : MonoBehaviour {
         lineRenderer.SetPosition(1, laserHit.position);
 
         if (Input.GetMouseButtonDown(1)) {
-            spriteRenderer.sprite = gunO;
-            lineRenderer.startColor = new Color(0.62745098039215686274509803921569f, 0.28235294117647058823529411764706f, 0.06274509803921568627450980392157f, 1);
-            lineRenderer.endColor = new Color(0.62745098039215686274509803921569f, 0.28235294117647058823529411764706f, 0.06274509803921568627450980392157f, 1);
+
+            if (!shot)
+            {
+                spriteRenderer.sprite = gunO;
+                lineRenderer.startColor = new Color(0.62745098039215686274509803921569f, 0.28235294117647058823529411764706f, 0.06274509803921568627450980392157f, 1);
+                lineRenderer.endColor = new Color(0.62745098039215686274509803921569f, 0.28235294117647058823529411764706f, 0.06274509803921568627450980392157f, 1);
 
 
-            lineRenderer.enabled = true;
+                lineRenderer.enabled = true;
+                shot = true;
+            }
         }
         if (Input.GetMouseButtonUp(1)){
+            shot = false;
             lineRenderer.enabled = false;
             spriteRenderer.sprite = gun;
         }
         if (Input.GetMouseButtonDown(0))
         {
-            spriteRenderer.sprite = gunB;
-            lineRenderer.startColor = new Color(0f, 0.14509803921568627450980392156863f, 0.29019607843137254901960784313725f, 1);
-            lineRenderer.endColor = new Color(0f, 0.14509803921568627450980392156863f, 0.29019607843137254901960784313725f, 1);
+            if (!shot)
+            {
+                spriteRenderer.sprite = gunB;
+                lineRenderer.startColor = new Color(0f, 0.14509803921568627450980392156863f, 0.29019607843137254901960784313725f, 1);
+                lineRenderer.endColor = new Color(0f, 0.14509803921568627450980392156863f, 0.29019607843137254901960784313725f, 1);
 
-            lineRenderer.enabled = true;
+                lineRenderer.enabled = true;
+                shot = true;
+            }
         }
         if (Input.GetMouseButtonUp(0))
         {
+            shot = false;
             spriteRenderer.sprite = gun;
             lineRenderer.enabled = false;
         }
