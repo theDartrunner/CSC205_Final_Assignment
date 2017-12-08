@@ -28,7 +28,7 @@ public class playerMove : MonoBehaviour {
         //stop walk animation
 		if (Input.GetKeyUp(KeyCode.D))
         {
-            
+            //anim.SetTime(0);
             anim.SetBool("walk", false);
         }
 
@@ -38,7 +38,7 @@ public class playerMove : MonoBehaviour {
             if (mySpriteRenderer.flipX == false)
             {
                 gameObject.transform.position += gameObject.transform.right * moveSpeed * Time.deltaTime;
-                
+                //anim.SetTime(1);
                 anim.SetBool("walk", true); // start walk animation
                 
             }
@@ -51,7 +51,7 @@ public class playerMove : MonoBehaviour {
         // stop walk animation
         if (Input.GetKeyUp(KeyCode.A))
         {
-              
+            //anim.SetTime(0);    
             anim.SetBool("walk", false);
         }
 
@@ -61,7 +61,7 @@ public class playerMove : MonoBehaviour {
             if (mySpriteRenderer.flipX == true)
             {
                 gameObject.transform.position += gameObject.transform.right * -1 * moveSpeed * Time.deltaTime;
-                
+                //anim.SetTime(1);
                 anim.SetBool("walk", true); // start walk animation
             }
 
@@ -103,9 +103,5 @@ public class playerMove : MonoBehaviour {
 			Destroy (hit.collider.gameObject);
 			Instantiate (turtleShell, new Vector2 (transform.position.x, 0), transform.rotation);
 		}
-	}
-
-	public void killPlayer(){
-		Destroy (gameObject);
 	}
 }
