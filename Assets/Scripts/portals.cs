@@ -11,10 +11,10 @@ public class portals : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+       
+    }
 
-    void OnCollisionEnter2D(Collision2D coll)
+    void OnTriggerEnter2D(Collider2D coll)
     {
 
         Debug.Log("portal");
