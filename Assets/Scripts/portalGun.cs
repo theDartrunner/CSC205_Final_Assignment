@@ -12,14 +12,23 @@ public class portalGun : MonoBehaviour {
     public Sprite gunO;
     public Sprite gunB;
     public bool shot;
+    public GameObject portalO;
+    public GameObject portalB;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         lineRenderer = GetComponent<LineRenderer> ();
         spriteRenderer = GetComponent<SpriteRenderer>();
         lineRenderer.enabled = false;
         lineRenderer.useWorldSpace = true;
         lineRenderer.material = new Material(Shader.Find("Particles/Additive"));
+
+        portalO = Instantiate(portalO);
+        portalB = Instantiate(portalB);
+        portalO.SetActive(false);
+        portalB.SetActive(false);
+
     }
 	
 	// Update is called once per frame
@@ -27,6 +36,8 @@ public class portalGun : MonoBehaviour {
 
         var pos = Camera.main.WorldToScreenPoint(transform.position);
         var dir = Input.mousePosition - pos;
+        var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         RaycastHit2D hit = Physics2D.Raycast(end.position, dir);
         //Debug.DrawLine(end.position, hit.point);
@@ -36,15 +47,23 @@ public class portalGun : MonoBehaviour {
 
         if (Input.GetMouseButtonDown(1)) {
 
+            portalO.SetActive(false);
+
             if (!shot)
             {
                 spriteRenderer.sprite = gunO;
                 lineRenderer.startColor = new Color(0.62745098039215686274509803921569f, 0.28235294117647058823529411764706f, 0.06274509803921568627450980392157f, 1);
                 lineRenderer.endColor = new Color(0.62745098039215686274509803921569f, 0.28235294117647058823529411764706f, 0.06274509803921568627450980392157f, 1);
 
-
                 lineRenderer.enabled = true;
                 shot = true;
+
+                portalO.transform.position = hit.point;
+                portalO.transform.rotation = Quaternion.FromToRotation(Vector3.right, hit.normal);
+                portalO.SetActive(true);
+
+
+
             }
         }
         if (Input.GetMouseButtonUp(1)){
@@ -54,6 +73,7 @@ public class portalGun : MonoBehaviour {
         }
         if (Input.GetMouseButtonDown(0))
         {
+            portalB.SetActive(false);
             if (!shot)
             {
                 spriteRenderer.sprite = gunB;
@@ -62,6 +82,11 @@ public class portalGun : MonoBehaviour {
 
                 lineRenderer.enabled = true;
                 shot = true;
+
+                portalB.transform.position = hit.point;
+                portalB.transform.rotation = Quaternion.FromToRotation(Vector3.right, hit.normal);
+                portalB.SetActive(true);
+
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -71,7 +96,7 @@ public class portalGun : MonoBehaviour {
             lineRenderer.enabled = false;
         }
 
-
+        
 
     }
 }
