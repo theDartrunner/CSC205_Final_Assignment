@@ -14,7 +14,7 @@ public class portals : MonoBehaviour {
 		
 	}
 
-    void OnTriggerEnter(Collider hit)
+    void OnCollisionEnter2D(Collision2D coll)
     {
 
         Debug.Log("portal");
