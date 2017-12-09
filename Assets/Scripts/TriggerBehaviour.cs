@@ -17,6 +17,7 @@ public class TriggerBehaviour : MonoBehaviour {
             if (other.tag == "gem")
             {
                 column.GetComponent<Renderer>().enabled = false;
+                column.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
         else
@@ -24,6 +25,7 @@ public class TriggerBehaviour : MonoBehaviour {
             if (other.tag == "gem")
             {
                 column.GetComponent<Renderer>().enabled = true;
+                column.GetComponent<BoxCollider2D>().enabled = true;
             }
         }
     }
@@ -35,6 +37,7 @@ public class TriggerBehaviour : MonoBehaviour {
             if (other.tag == "gem")
             {
                 column.GetComponent<Renderer>().enabled = true;
+                column.GetComponent<BoxCollider2D>().enabled = true;
             }
         }
         else
@@ -42,6 +45,7 @@ public class TriggerBehaviour : MonoBehaviour {
             if (other.tag == "gem")
             {
                 column.GetComponent<Renderer>().enabled = false;
+                column.GetComponent<BoxCollider2D>().enabled = false;
             }
         }
     }
