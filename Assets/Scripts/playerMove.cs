@@ -13,6 +13,13 @@ public class playerMove : MonoBehaviour {
 	public GameObject turtleShell;
     public GameObject portalgun;
 
+	public AudioClip turtleDeath;
+	private AudioSource source;
+
+	void Awake () {
+		source = GetComponent<AudioSource>();
+	}
+
     void Start () {
 
         mySpriteRenderer = GetComponent<SpriteRenderer>();
@@ -117,6 +124,7 @@ public class playerMove : MonoBehaviour {
 			Jump ();
 
 			Destroy (hit.collider.gameObject);
+			source.PlayOneShot (turtleDeath, 0.5f);
 			Instantiate (turtleShell, new Vector2 (transform.position.x, 0), transform.rotation);
 		}
 	}
