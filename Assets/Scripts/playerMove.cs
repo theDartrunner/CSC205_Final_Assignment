@@ -11,6 +11,7 @@ public class playerMove : MonoBehaviour {
     private SpriteRenderer mySpriteRenderer;
 	public bool isGrounded = true;
 	public GameObject turtleShell;
+    public GameObject portalgun;
 
     void Start () {
 
@@ -25,10 +26,22 @@ public class playerMove : MonoBehaviour {
 
 		PlayerRaycast ();
 
+
+        // filp player depending on portal gun rotation 
+        if (portalgun.transform.rotation.z > 0.7f || portalgun.transform.rotation.z < -0.7f) 
+        {
+            mySpriteRenderer.flipX = true;
+        }
+
+        else if (portalgun.transform.rotation.z < 0.7f || portalgun.transform.rotation.z > -0.7f)
+        {
+            mySpriteRenderer.flipX = false;
+        }
+
         //stop walk animation
 		if (Input.GetKeyUp(KeyCode.D))
         {
-            //anim.SetTime(0);
+            
             anim.SetBool("walk", false);
         }
 
@@ -38,7 +51,7 @@ public class playerMove : MonoBehaviour {
             if (mySpriteRenderer.flipX == false)
             {
                 gameObject.transform.position += gameObject.transform.right * moveSpeed * Time.deltaTime;
-                //anim.SetTime(1);
+               
                 anim.SetBool("walk", true); // start walk animation
                 
             }
@@ -51,7 +64,7 @@ public class playerMove : MonoBehaviour {
         // stop walk animation
         if (Input.GetKeyUp(KeyCode.A))
         {
-            //anim.SetTime(0);    
+           
             anim.SetBool("walk", false);
         }
 
@@ -61,7 +74,7 @@ public class playerMove : MonoBehaviour {
             if (mySpriteRenderer.flipX == true)
             {
                 gameObject.transform.position += gameObject.transform.right * -1 * moveSpeed * Time.deltaTime;
-                //anim.SetTime(1);
+               
                 anim.SetBool("walk", true); // start walk animation
             }
 
