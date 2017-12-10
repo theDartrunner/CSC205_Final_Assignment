@@ -9,6 +9,13 @@ public class AiMovement : MonoBehaviour {
 	public Rigidbody2D rb;
 	private SpriteRenderer mySpriteRenderer;
 
+	public AudioClip playerDeath;
+	private AudioSource source;
+
+	void Awake () {
+		source = GetComponent<AudioSource>();
+	}
+
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
@@ -25,6 +32,7 @@ public class AiMovement : MonoBehaviour {
 				mySpriteRenderer.flipX = true;
 				if (hit.collider.tag == "Player") {
 					Destroy (hit.collider.gameObject);
+					source.PlayOneShot (playerDeath, 0.5f);
 				}
 			}
 		} else
@@ -35,6 +43,7 @@ public class AiMovement : MonoBehaviour {
 				mySpriteRenderer.flipX = false;
 				if (hit.collider.tag == "Player") {
 					Destroy (hit.collider.gameObject);
+					source.PlayOneShot (playerDeath, 0.5f);
 				}
 			}
 		}
