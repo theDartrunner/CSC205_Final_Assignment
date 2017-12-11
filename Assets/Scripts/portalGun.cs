@@ -32,6 +32,8 @@ public class portalGun : MonoBehaviour {
 
         portalO = Instantiate(portalO);
         portalB = Instantiate(portalB);
+        portalO.transform.position = new Vector3(-13, -11, 0);
+        portalB.transform.position = new Vector3(-14, -11, 0);
         portalO.SetActive(false);
         portalB.SetActive(false);
 
@@ -68,6 +70,7 @@ public class portalGun : MonoBehaviour {
                 portalO.transform.position = hit.point;
                 portalO.transform.rotation = Quaternion.FromToRotation(Vector3.right, hit.normal);
                 portalO.SetActive(true);
+                portalO.GetComponent<Collider2D>().enabled = true;
 
 
 
@@ -94,6 +97,7 @@ public class portalGun : MonoBehaviour {
                 portalB.transform.position = hit.point;
                 portalB.transform.rotation = Quaternion.FromToRotation(Vector3.right, hit.normal);
                 portalB.SetActive(true);
+                portalB.GetComponent<Collider2D>().enabled = true;
 
             }
         }
