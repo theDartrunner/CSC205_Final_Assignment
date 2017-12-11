@@ -20,6 +20,7 @@ public class playerMove : MonoBehaviour {
 	public AudioClip playerJump;
 	private AudioSource source;
 	public AudioClip playerDeath;
+	public AudioClip gameWin;
 
 	void Awake () {
 		source = GetComponent<AudioSource>();
@@ -149,12 +150,29 @@ public class playerMove : MonoBehaviour {
 			StartCoroutine(Wait());
 		}
 
-		//boundary
+		//enemy
 		if (hit.gameObject.tag == "Enemy" )
 		{
 			GameObject A = GameObject.FindGameObjectWithTag("music2");
 			Destroy(A);
 			StartCoroutine(Wait());
+		}
+
+		//boundary
+		if (hit.gameObject.tag == "exit" )
+		{
+			GameObject A = GameObject.FindGameObjectWithTag("music2");
+			Destroy(A);
+			source.PlayOneShot (gameWin, 1.0f);
+			StartCoroutine (Wait2 ());
+		}
+
+		if (hit.gameObject.tag == "exit2" )
+		{
+			GameObject A = GameObject.FindGameObjectWithTag("music2");
+			Destroy(A);
+			source.PlayOneShot (gameWin, 1.0f);
+			StartCoroutine (Wait3 ());
 		}
         
         
@@ -178,5 +196,17 @@ public class playerMove : MonoBehaviour {
 	{
 		yield return new WaitForSeconds(2);
 		SceneManager.LoadScene ("GameOver_Level2");
+	}
+
+	IEnumerator Wait2()
+	{
+		yield return new WaitForSeconds(6);
+		SceneManager.LoadScene ("level1win");
+	}
+
+	IEnumerator Wait3()
+	{
+		yield return new WaitForSeconds(6);
+		SceneManager.LoadScene ("level2win");
 	}
 }
