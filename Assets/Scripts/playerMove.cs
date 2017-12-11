@@ -124,11 +124,11 @@ public class playerMove : MonoBehaviour {
     // see if player is touching the floor and stop jump animation
     void OnCollisionEnter2D(Collision2D hit)
     {
-        if (hit.gameObject.tag == "Floor" || hit.gameObject.tag == "horiz_move" || hit.gameObject.tag == "vert_move")
-        {
+      //  if (hit.gameObject.tag == "Floor" || hit.gameObject.tag == "horiz_move" || hit.gameObject.tag == "vert_move")
+//{
 			isGrounded = true;
             anim.SetBool("jump", false);
-		}
+		//}
 
         // picking up objects 
         if (hit.gameObject.tag == "Shell" )
