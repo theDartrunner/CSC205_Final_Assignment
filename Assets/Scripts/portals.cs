@@ -42,7 +42,7 @@ public class portals : MonoBehaviour {
     IEnumerator wait()
     {
         //Debug.Log("wait1");
-        yield return new WaitForSeconds(.25f);
+        yield return new WaitForSeconds(1f);
         GameObject.FindGameObjectWithTag("portalB").GetComponent<Collider2D>().enabled = true;
         GameObject.FindGameObjectWithTag("portalO").GetComponent<Collider2D>().enabled = true;
         //Debug.Log("wait2");
