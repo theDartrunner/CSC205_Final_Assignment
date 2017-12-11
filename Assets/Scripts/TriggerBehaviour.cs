@@ -14,7 +14,7 @@ public class TriggerBehaviour : MonoBehaviour {
     {
         if (this.tag == "reverse_trigger")
         {
-            if (other.tag == "gem")
+            if (other.tag == "gem" || other.tag == "shell")
             {
                 column.GetComponent<Renderer>().enabled = false;
                 column.GetComponent<BoxCollider2D>().enabled = false;
@@ -22,7 +22,7 @@ public class TriggerBehaviour : MonoBehaviour {
         }
         else
         {
-            if (other.tag == "gem")
+            if (other.tag == "gem" || other.tag == "shell")
             {
                 column.GetComponent<Renderer>().enabled = true;
                 column.GetComponent<BoxCollider2D>().enabled = true;
@@ -34,7 +34,7 @@ public class TriggerBehaviour : MonoBehaviour {
     {
         if (this.tag == "reverse_trigger")
         {
-            if (other.tag == "gem")
+            if (other.tag == "gem" || other.tag == "shell")
             {
                 column.GetComponent<Renderer>().enabled = true;
                 column.GetComponent<BoxCollider2D>().enabled = true;
@@ -42,7 +42,7 @@ public class TriggerBehaviour : MonoBehaviour {
         }
         else
         {
-            if (other.tag == "gem")
+            if (other.tag == "gem" || other.tag == "shell")
             {
                 column.GetComponent<Renderer>().enabled = false;
                 column.GetComponent<BoxCollider2D>().enabled = false;

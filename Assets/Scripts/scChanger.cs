@@ -13,9 +13,13 @@ public class scChanger : MonoBehaviour {
     {
         SceneManager.LoadScene("mainMenu");
     }
-    public void highScroes ()
+    public void Level2 ()
     {
-        SceneManager.LoadScene("highScores");
+        SceneManager.LoadScene("level_2");
+    }
+    public void Tutorial ()
+    {
+        SceneManager.LoadScene("Tutorial_level");
     }
     public void about()
     {
@@ -23,7 +27,7 @@ public class scChanger : MonoBehaviour {
     }
     public void newGame()
     {
-        SceneManager.LoadScene("level1");
+        SceneManager.LoadScene("level_select");
     }
     
     public void howTo()

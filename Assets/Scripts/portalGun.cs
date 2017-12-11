@@ -15,6 +15,12 @@ public class portalGun : MonoBehaviour {
     public GameObject portalO;
     public GameObject portalB;
 
+	private AudioSource source;
+	public AudioClip laserShot;
+
+	void Awake () {
+		source = GetComponent<AudioSource>();
+	}
 
     // Use this for initialization
     void Start () {
@@ -26,6 +32,8 @@ public class portalGun : MonoBehaviour {
 
         portalO = Instantiate(portalO);
         portalB = Instantiate(portalB);
+        portalO.transform.position = new Vector3(-13, -11, 0);
+        portalB.transform.position = new Vector3(-14, -11, 0);
         portalO.SetActive(false);
         portalB.SetActive(false);
 
@@ -46,7 +54,8 @@ public class portalGun : MonoBehaviour {
         lineRenderer.SetPosition(1, laserHit.position);
 
         if (Input.GetMouseButtonDown(1)) {
-
+			
+			source.PlayOneShot (laserShot, 0.5f);
             portalO.SetActive(false);
 
             if (!shot)
@@ -61,6 +70,7 @@ public class portalGun : MonoBehaviour {
                 portalO.transform.position = hit.point;
                 portalO.transform.rotation = Quaternion.FromToRotation(Vector3.right, hit.normal);
                 portalO.SetActive(true);
+                portalO.GetComponent<Collider2D>().enabled = true;
 
 
 
@@ -73,6 +83,7 @@ public class portalGun : MonoBehaviour {
         }
         if (Input.GetMouseButtonDown(0))
         {
+			source.PlayOneShot (laserShot, 0.5f);
             portalB.SetActive(false);
             if (!shot)
             {
@@ -86,6 +97,7 @@ public class portalGun : MonoBehaviour {
                 portalB.transform.position = hit.point;
                 portalB.transform.rotation = Quaternion.FromToRotation(Vector3.right, hit.normal);
                 portalB.SetActive(true);
+                portalB.GetComponent<Collider2D>().enabled = true;
 
             }
         }
