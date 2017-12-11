@@ -1,10 +1,17 @@
 fileFormatVersion: 2
 guid: cf590d99945b6be498012ba0f59b8fa5
-timeCreated: 1510876959
+timeCreated: 1512956754
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - rb: {instanceID: 0}
+  - anim: {instanceID: 0}
+  - turtleShell: {instanceID: 0}
+  - portalgun: {instanceID: 0}
+  - player: {instanceID: 0}
+  - turtleDeath: {fileID: 8300000, guid: 9972aebc968e146be84950fd347d825b, type: 3}
+  - playerJump: {fileID: 8300000, guid: 83c45ed3b0acc418f93e58b3a2ef0260, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -15,6 +15,12 @@ public class portalGun : MonoBehaviour {
     public GameObject portalO;
     public GameObject portalB;
 
+	private AudioSource source;
+	public AudioClip laserShot;
+
+	void Awake () {
+		source = GetComponent<AudioSource>();
+	}
 
     // Use this for initialization
     void Start () {
@@ -46,7 +52,8 @@ public class portalGun : MonoBehaviour {
         lineRenderer.SetPosition(1, laserHit.position);
 
         if (Input.GetMouseButtonDown(1)) {
-
+			
+			source.PlayOneShot (laserShot, 0.5f);
             portalO.SetActive(false);
 
             if (!shot)
@@ -73,6 +80,7 @@ public class portalGun : MonoBehaviour {
         }
         if (Input.GetMouseButtonDown(0))
         {
+			source.PlayOneShot (laserShot, 0.5f);
             portalB.SetActive(false);
             if (!shot)
             {

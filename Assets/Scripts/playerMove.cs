@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMove : MonoBehaviour {
 
@@ -16,7 +17,9 @@ public class playerMove : MonoBehaviour {
     public GameObject player;
 
 	public AudioClip turtleDeath;
+	public AudioClip playerJump;
 	private AudioSource source;
+	public AudioClip playerDeath;
 
 	void Awake () {
 		source = GetComponent<AudioSource>();
@@ -95,6 +98,7 @@ public class playerMove : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.Space) && isGrounded == true)
         {
+			source.PlayOneShot (playerJump, 0.5f);
 			Jump ();
 		}
 
@@ -134,7 +138,24 @@ public class playerMove : MonoBehaviour {
                 hit.transform.gameObject.tag = "Item";
                 hit.rigidbody.gravityScale = 0;
                 holding = true;   
-        }        
+        }
+
+		//boundary
+		if (hit.gameObject.tag == "boundary" )
+		{
+			GameObject A = GameObject.FindGameObjectWithTag("music2");
+			Destroy(A);
+			source.PlayOneShot (playerDeath, 1.0f);
+			StartCoroutine(Wait());
+		}
+
+		//boundary
+		if (hit.gameObject.tag == "Enemy" )
+		{
+			GameObject A = GameObject.FindGameObjectWithTag("music2");
+			Destroy(A);
+			StartCoroutine(Wait());
+		}
         
         
     }
@@ -151,5 +172,11 @@ public class playerMove : MonoBehaviour {
 			source.PlayOneShot (turtleDeath, 0.5f);
 			Instantiate (turtleShell, new Vector2 (transform.position.x, 0), transform.rotation);
 		}
+	}
+
+	IEnumerator Wait()
+	{
+		yield return new WaitForSeconds(2);
+		SceneManager.LoadScene ("GameOver_Level2");
 	}
 }
