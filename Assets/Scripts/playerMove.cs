@@ -10,8 +10,17 @@ public class playerMove : MonoBehaviour {
     public Animator anim;
     private SpriteRenderer mySpriteRenderer;
 	public bool isGrounded = true;
+    private bool holding = false;
 	public GameObject turtleShell;
     public GameObject portalgun;
+    public GameObject player;
+
+	public AudioClip turtleDeath;
+	private AudioSource source;
+
+	void Awake () {
+		source = GetComponent<AudioSource>();
+	}
 
     void Start () {
 
@@ -84,9 +93,21 @@ public class playerMove : MonoBehaviour {
             }
         }
 
-		if (Input.GetKeyDown (KeyCode.Space) && isGrounded == true) {
+		if (Input.GetKeyDown (KeyCode.Space) && isGrounded == true)
+        {
 			Jump ();
 		}
+
+        // putting down objects
+        if (holding && Input.GetKeyDown(KeyCode.E))
+        {
+            var item = GameObject.FindGameObjectWithTag("Item");
+           
+            item.transform.parent = null;
+            item.transform.gameObject.tag = "Shell";
+            item.GetComponent<Rigidbody2D>().gravityScale = 1f;
+            holding = false;
+        }
     }
 
 	public void Jump () {
@@ -104,6 +125,16 @@ public class playerMove : MonoBehaviour {
             anim.SetBool("jump", false);
 		}
 
+        // picking up objects 
+        if (hit.gameObject.tag == "Shell" )
+        {
+                Debug.Log("holding");
+                hit.transform.parent = player.transform;
+                hit.transform.localPosition = hit.transform.position = new Vector3(0.99f, -0.13f, 0f);
+                hit.transform.gameObject.tag = "Item";
+                hit.rigidbody.gravityScale = 0;
+                holding = true;   
+        }        
         
         
     }
@@ -117,6 +148,7 @@ public class playerMove : MonoBehaviour {
 			Jump ();
 
 			Destroy (hit.collider.gameObject);
+			source.PlayOneShot (turtleDeath, 0.5f);
 			Instantiate (turtleShell, new Vector2 (transform.position.x, 0), transform.rotation);
 		}
 	}
